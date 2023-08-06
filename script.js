@@ -3,9 +3,17 @@ function addElement() {
         alert("You must write something");
     } else {
         var result = document.getElementById("Value").value;
-        console.log(result);
+        var storeElement = [result];
+        document.getElementById("task").innerHTML += storeElement +"<br>";
+        document.getElementById("task").style.display="block";
+
+      document.getElementById("Value").value="";
     }
+
 }
+
+
+
 
 
 
